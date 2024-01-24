@@ -183,10 +183,10 @@ h1 {
   .container .section-1 .image-mask {
     width: 80vw;
     height: 80vh;
-    background: url("https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/bwimages%2Ftumblr_n92tblyC8d1s3sziio1_1280.jpg?alt=media&token=c5d75884-4bc3-46bb-815d-414d2ec68e4b");
+    background: url("assets/3.jpg");
     background-size: cover;
     background-position-x: 50%;
-    background-position-y: 90%;
+    background-position-y: center;
     background-size: 100%;
  }
   .container .section-1 .image-mask img {
@@ -264,6 +264,52 @@ h1 {
   .container .section-3 .copyright {
     position: absolute;
     bottom: 5%;
-    left: 50%;
+    right: 10%;
     font-size: 4vmin !important;
  }
+
+ @media screen and (max-width: 600px) {
+  .container .section-2 .images-container {
+    grid-template-columns: repeat(1, 1fr);
+ }
+  .container .hero {
+    grid-template-columns: 100% 0;
+  }
+  .container .section-2 blockquote {
+    font-size: 20px;
+  }
+  .container .section-2 {
+    height: calc(500vh + 32px + 16px);
+ }
+ }
+
+@media screen and (max-width: 992px) {
+  
+}
+
+
+.social {
+  text-align: center;
+  font-size: 2em;
+  color: #555;
+  overflow: hidden;
+}
+.social a {
+  color: inherit;
+  text-decoration: none;
+}
+.social i {
+  margin: 0.3em;
+  cursor: pointer;
+  transition: color 300ms ease, margin-top 300ms ease;
+  transform: translateZ(0);
+}
+.social i:hover {
+  margin-top: -1px;
+}
+.social i#twitter:hover {
+  color: #d43402;
+}
+.social i#mail:hover {
+  color: #f7b401;
+}
